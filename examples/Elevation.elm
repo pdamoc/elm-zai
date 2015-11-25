@@ -69,7 +69,7 @@ view address model =
 
         , dropShadow 1 <| g [transform "translate(715, 300), rotate(30, 0, 0)"] [rect [ width "400", height "400", zFill  Cyan200, rx "2px", ry "2px"] []]
         , dropShadow 1 <| g [transform t2] [rect [ width "300", height "300", zFill  Cyan100, rx "2px", ry "2px"] []]
-        , slide (600, 10) <| g [opacity "0.5"] [rect [ width "500", height "200", fill "black", rx "2px", ry "2px"] [], text' [transform "translate(150, 150)", fill "white"] [text "HELLO BELLO"]]
+        --, slide (600, 10) <| g [opacity "0.5"] [rect [ width "500", height "200", fill "black", rx "2px", ry "2px"] [], text' [transform "translate(150, 150)", fill "white"] [text "HELLO BELLO"]]
         --, dropShadow 1 <| line [x1 "0", y1 "200.5", x2 w, y2 "200.5", stroke (colorToString Grey), strokeWidth "1"] []
          ]
 
