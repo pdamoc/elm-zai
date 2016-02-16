@@ -4,7 +4,7 @@ module Zai where
 
 # Device Independence Helpers
 
-@docs dp, Action, colorToString, colorStyle, zFill, MaterialColor 
+@docs dp, Action, colorToString, colorStyle, zFill, MaterialColor, patterns 
 
 # Elevation Filters
 @docs elevationFilter, allElevationFilters, dropShadow
@@ -12,7 +12,12 @@ module Zai where
 -}
 import Svg exposing (Svg, g, svg, rect, defs, feFlood, feComposite, feOffset, feGaussianBlur, feBlend, feColorMatrix, circle)
 import Svg.Attributes exposing (..)
+import Patterns
 
+
+{-|-}
+patterns : List Svg
+patterns = Patterns.patterns
 
 {-|-}
 type Action = First | Second
