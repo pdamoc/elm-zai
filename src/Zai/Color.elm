@@ -1,6 +1,6 @@
 module Zai.Color 
   ( PrimaryColor(..), Variant(..), BWVariant(..), BlackOrWhite(..), ZaiColor
-  , map, tint, shade, saturate, toHex, primaryToString, toString
+  , map, tint, shade, saturate, toHex, primaryToString, toColorString
   , primaries, variants ) where 
 
 {-| Module Zai.Color
@@ -11,7 +11,7 @@ module Zai.Color
 
 # Functions 
 
-@docs map, tint, shade, saturate, primaryToString, toHex, toString
+@docs map, tint, shade, saturate, primaryToString, toHex, toColorString
 
 # Convenience lists
 
@@ -43,8 +43,8 @@ type BlackOrWhite = Black | White
 type ZaiColor = C PrimaryColor Variant | BW BlackOrWhite BWVariant
 
 {-| -}
-toString : ZaiColor -> String
-toString zc =
+toColorString : ZaiColor -> String
+toColorString zc =
   case zc of
     BW bw variant -> 
       case bw of 

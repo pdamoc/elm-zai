@@ -35,7 +35,7 @@ primBox c =
       , ("alignContent", "center")
       , ("width", "250px")
       , ("height", "280px")
-      , ("backgroundColor", toCssColor <| toColor  c)
+      , ("backgroundColor", primaryToString  c)
       ]
     ] 
     [ p 
